@@ -1,0 +1,101 @@
+ឮ
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Khmer OS Battambang', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ffe5ec 0%, #ffc2d1 100%);
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(255, 75, 110, 0.2);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            border: 2px solid #ff8fab;
+            position: relative;
+        }
+
+        .heart-icon {
+            font-size: 60px;
+            color: #ff477e;
+            animation: beat 0.8s infinite alternate;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        @keyframes beat {
+            to { transform: scale(1.2); }
+        }
+
+        h1 {
+            color: #ff477e;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #4a4a4a;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+            height: 50px;
+        }
+
+        .btn {
+            padding: 12px 35px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-yes {
+            background-color: #ff477e;
+            color: white;
+        }
+
+        .btn-yes:hover {
+            background-color: #ff0a54;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 10, 84, 0.4);
+        }
+
+        .btn-no {
+            background-color: #747d8c;
+            color: white;
+            position: absolute;
+            right: 40px;
+        }
+
+        /* សម្រាប់បង្ហាញសារពេលចុចព្រម */
+        .success-message {
+            display: none;
+        }
+
+        .success-message h2 {
+            color: #ff0a54;
+            margin-bottom: 15px;
+        }
